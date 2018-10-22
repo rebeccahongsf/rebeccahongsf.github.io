@@ -50,8 +50,8 @@ hr {
 
 .see-about {
 	position: absolute;
-    left: 50%;
-    bottom: 2rem;
+	left: 50%;
+	bottom: 2rem;
 }
 
 .see-about a {
@@ -72,7 +72,7 @@ hr {
 
 .photo {
 	display: block;
-    margin: 0 auto;
+	margin: 0 auto;
 	border-radius: 50%;
 }
 
@@ -87,13 +87,13 @@ hr {
 }
 
 #projects {
-	padding-top: 15%;
-	padding-bottom: 15%;
 	height: 100%;
+	padding-bottom: 15%;
+	padding-top: 15%;
 }
 
 #contact {
-	alig: center;
+	align-content: center;
 	height: 100%;
 	width: 100%;
 }
@@ -105,18 +105,18 @@ hr {
 }
 
 .footer-wrapper {
+	background-image: linear-gradient(-100deg,#eedade,#eaeaea);
+	height: 100vh;
+	padding: 25% 0% 25% 0%;
 	text-align: center;
-    background-image: linear-gradient(-100deg,#eedade,#eaeaea);
-    padding: 25% 0% 25% 0%;
-    height: 100vh;
 }
 
 .footer-label {
-    font-size: 14px;
-    font-color: #f8f8f8;
-    background-color: #bdbcc1;
-    text-align: center;
-    padding: 25px 0 25px 0;
+	background-color: #bdbcc1;
+	color: #f8f8f8;
+	font-size: 14px;
+	padding: 25px 0 25px 0;
+	text-align: center;
 }
 
 /* Font Awesome Footer Icon Color Adjustment */
