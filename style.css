@@ -93,6 +93,7 @@ hr {
 	align-content: center;
 	padding: 25em 0;
 	width: 100%;
+	
 }
 
 #contact i {
@@ -105,6 +106,7 @@ hr {
 	text-align: center;
     background-image: linear-gradient(-100deg,#eedade,#eaeaea);
     height: 100vh;
+    overflow: hidden;
 }
 
 .footer-label {
