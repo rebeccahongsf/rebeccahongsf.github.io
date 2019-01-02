@@ -91,9 +91,8 @@ hr {
 
 #contact {
 	align-content: center;
-	padding: 25em 0;
-	width: 100%;
-	
+	text-align: center;
+	padding: 10em 0;
 }
 
 #contact i {
@@ -103,7 +102,6 @@ hr {
 }
 
 .footer-wrapper {
-	text-align: center;
     background-image: linear-gradient(-100deg,#eedade,#eaeaea);
     height: 100vh;
     overflow: hidden;
@@ -114,7 +112,7 @@ hr {
     font-size: 14px;
     background-color: #bdbcc1;
     text-align: center;
-    padding: 25px 0 25px 0;
+    padding: 25px 0;
 }
 
 /* Font Awesome Footer Icon Color Adjustment */
