@@ -4,39 +4,11 @@ html {
 	width: 100%;
 }
 
-.text-center {
-    text-align: center!important;
-}
-
-.navbar {
-	margin: auto 0;
-	padding: 0.25em 0 0.25em 0;
-}
-
-.navbar-default {
-	background: #dedde3;
-}
-
-.cover {
-	background: url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8b82dbd7fe9677e9218686a427ea6d7&auto=format&fit=crop&w=1050&q=80);
-	background-position: center;
-  	background-attachment: fixed;
-  	background-size: cover;
-  	height: 100vh;
-  	/*height: 100%;
-  	width: 100%;*/
-}
-
 body {
+	color: #555;
 	font-family: 'Krub', sans-serif;
 	font-size: 1.5em;
 	line-height: 1.5;
-	color: #555;
-}
-
-.intro {
-	text-align: center;
-	padding: 25% 0% 25% 0%;
 }
 
 h1 {
@@ -49,44 +21,86 @@ h4, h5 {
 
 
 hr {
-	width: 400px;
-	max-width: 90%;
 	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.1)
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	max-width: 90%;
+	width: 400px;
 }
 
-.see-about {
-	position: absolute;
-    left: 50%;
-    bottom: 2rem;
-}
-
-.see-about a {
-  	color: #555;
-}
-
-.see-about i:hover::before {
-	color: #e78aa2;
-	border: 3px solid #e78aa2;
-	border-radius: 5px;
-	transition: .3s ease-in-out;
-}
-
-#about {
-	padding-top: 15%;
+.cover {
+	background: url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8b82dbd7fe9677e9218686a427ea6d7&auto=format&fit=crop&w=1050&q=80);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 	height: 100vh;
 }
 
-.photo {
-	display: block;
-    margin: 0 auto;
-	border-radius: 50%;
+/* Font Awesome Footer Icon Color Adjustment */
+.fa-heart {
+	color: #e78aa2;
+}
+.fa-coffee {
+	color: #986d4e;
 }
 
-#skills, #projects {
-	padding-top: 10%;
-	padding-bottom: 15%;
-	height: 100%;
+.footer-wrapper {
+  background-image: linear-gradient(-100deg,#eedade,#eaeaea);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.footer-label {
+	background-color: #bdbcc1;
+	color: #f8f8f8;
+	font-size: 14px;
+  padding: 25px 0;
+	text-align: center;
+}
+
+.intro {
+	padding: 25% 0% 25% 0%;
+	text-align: center;
+}
+
+.navbar {
+	margin: auto 0;
+	padding: 0.25em 0 0.25em 0;
+}
+
+.navbar-default {
+	background: #dedde3;
+}
+
+.photo {
+	border-radius: 50%;
+	display: block;
+  margin: 0 auto;
+}
+
+.see-about {
+  bottom: 2rem;
+  left: 50%;
+	position: absolute;
+}
+
+.see-about a {
+	color: #555;
+}
+
+.see-about i:hover::before {
+	border: 3px solid #e78aa2;
+	border-radius: 5px;
+	color: #e78aa2;
+	transition: .3s ease-in-out;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+#about {
+	height: 100vh;
+	padding-top: 15%;
 }
 
 #contact {
@@ -101,24 +115,8 @@ hr {
 	padding: 5px;
 }
 
-.footer-wrapper {
-    background-image: linear-gradient(-100deg,#eedade,#eaeaea);
-    height: 100vh;
-    overflow: hidden;
-}
-
-.footer-label {
-    color: #f8f8f8;
-    font-size: 14px;
-    background-color: #bdbcc1;
-    text-align: center;
-    padding: 25px 0;
-}
-
-/* Font Awesome Footer Icon Color Adjustment */
-.fa-heart {
-	color: #e78aa2;
-}
-.fa-coffee {
-	color: #986d4e;
+#skills, #projects {
+	padding-top: 10%;
+	padding-bottom: 15%;
+	height: 100%;
 }
