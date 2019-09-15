@@ -1,254 +1,223 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <link rel="image_src" href="#" />
+    <title>Rebecca Hong - Portfolio</title>
+    <!-- Google Font: KRUB -->
+    <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <!-- CSS Styling -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
-  <link rel="image_src" href="#" />
-  <title>Rebecca Hong - Portfolio</title>
-  <!-- Google Font: KRUB -->
-  <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-  <!-- CSS Styling -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
-</head>
-
-<body>
-  <!-- Navigation Bar -->
-  <div id="myNav">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- Hamburger Collapse Button Icon -->
-          <button type="button" class="navbar-toggle collapsed navbar-collapse" data-toggle="collapse" data-target="#nav-content"
-            aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="myNav">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="section">
+          <div class="navbar-header">
+            <!-- Hamburger Collapse Button Icon -->
+            <button type="button" class="navbar-toggle collapsed navbar-collapse" data-toggle="collapse" data-target="#nav-content"
+              aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- Content in the Collapse NavBar -->
+          <div class="collapse navbar-collapse" id="nav-content">
+            <ul class="nav navbar-nav">
+              <li><a class="scroll" href="#home"><i class="fa fa-home"></i></a></li>
+              <li><a class="scroll" href="#skills">Skills</a></li>
+              <li><a class="scroll" href="#projects">Projects</a></li>
+              <li><a target="_blank" href="assets/rebeccahong_resume.pdf">Resume</a></li>
+            </ul>
+          </div>
         </div>
-        <!-- Content in the Collapse NavBar -->
-        <div class="collapse navbar-collapse" id="nav-content">
-          <ul class="nav navbar-nav">
-            <li><a class="scroll" href="#home"><i class="fas fa-home"></i></a></li>
-            <li><a class="scroll" href="#about">About</a></li>
-            <li><a class="scroll" href="#skills">Skills</a></li>
-            <li><a class="scroll" href="#projects">Projects</a></li>
-            <li><a target="_blank" href="assets/rebeccahong_resume.pdf">Resume</a></li>
-            <li><a class="scroll" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <!-- Intro -->
-  <div class="header">
-    <div class="cover">
-      <div class="container">
-        <div class="intro text-center" id="home">
-          <h1>Rebecca Hong</h1>
-          <hr>
-          <h3>Front End Developer</h3>
-        </div>
-
-        <div class="see-about text-center">
-          <a class="scroll" href="#about">
-            <i class="fa fa-chevron-down fa-2x"></i>
-          </a>
-        </div>
-      </div>
+      </nav>
     </div>
-  </div>
-
-
-  <!-- About -->
-  <div class="container" id="about">
-    <div class="row">
+<div class="container">
+  <!-- Intro -->
+  <div class="section" id="home">
+    <div class="bio">
       <!-- About me -->
-      <div class="col-sm-8">
-        <h2 class="text-center">About Me</h2>
+      <div class="about">
+        <h2 class="text-center">Rebecca Hong</h2>
         <hr>
-        <p>I'm a front end developer based in the Bay Area.</p>
-
-        <p>I am a Visual Designer specializing in user experience design, user research, and front-end development. As a perpetual scholar and avid gamer, I love leveling up my skills and experience across web design and development. When I am not designing and writing code, I enjoy drawing, woodworking, gaming, sewing, hiking with my dogs, and working on my Subaru.<br />I am currently looking for new opportunities.</p>
+        <p>I'm a front end developer based in the Bay Area.<br />
+        I am a Visual Designer specializing in user experience design, user research, and front-end development. As a perpetual scholar and avid gamer, I love leveling up my skills and experience across web design and development. When I am not designing and writing code, I enjoy drawing, woodworking, gaming, sewing, hiking with my dogs, and working on my Subaru.<br />I am currently looking for new opportunities.</p>
       </div>
       <!-- Profile Photo -->
-      <div class="col-sm-4">
-        <img class="photo" src="assets/Linkedin.jpg"
-          alt="Rebecca Hong" width="280" height="280">
+      <div id="sidebar" class="sidebar right">
+        <div class="profile_photo">
+          <img class="photo" src="assets/Linkedin.jpg"
+            alt="Rebecca Hong" width="280" height="280">
+        </div>
+        <!-- Contact -->
+        <div class="contact">
+          <div class="text-center">Let's Connect!</div>
+          <div class="connect_links">
+            <a target="_blank" href="https://linkedin.com/in/rehong" atl="Linkedin">
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+            <a target="_blank" href="#" atl="Github">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+            <a href="mailto:rebeccahongsf@gmail.com" atl="Email">
+              <i class="fa fa-envelope-square"></i>
+            </a>
+          </div>
+
+        </div>
       </div>
-      <!-- Line Break -->
     </div>
   </div>
 
   <!-- Skills -->
-  <div class="container" id="skills">
-    <div class="row">
-      <h2 class="text-center col-sm-12">Skills</h2>
+  <div class="section skill" id="skills">
+    <div class="title_head">
+      <h2 class="text-center">Skills</h2>
       <hr>
-      <!-- Designer -->
-      <div class="col-sm-4">
-        <h3><i class="fas fa-pencil-alt"></i> Designer</h3>
-        <ul>
-          <li>UI/UX Design</li>
-          <li>Prototyping</li>
-          <li>User Stories</li>
-          <li>Flow Charts</li>
-        </ul>
-        <h4>Design Tool Kit</h4>
-        <ul>
-          <li>Sketch</li>
-          <li>Adobe Photoshop</li>
-          <li>User Stories</li>
-          <li>Flow Charts</li>
-        </ul>
-      </div>
-      <!-- Developer -->
-      <div class="col-sm-4">
-        <h3><i class="fas fa-code"></i> Developer</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>Bootstrap</li>
-          <li>C</li>
-          <li>PostgreSQL</li>
-        </ul>
-        <h4>Developer Tool Kit</h4>
-        <ul>
-          <li>Sublime</li>
-          <li>ATOM</li>
-          <li>Brackets.io</li>
-          <li>XAMPP</li>
-          <li>Git</li>
-          <li>Github</li>
-          <li>Adobe Dream Weaver</li>
-        </ul>
-      </div>
-
-      <div class="col-sm-4">
-        <h3><i class="fas fa-book"></i> Professional Development</h3>
-        <p>Things that I am learning over the course of the next few months.</p>
-        <ul>
-          <li>WordPress</li>
-          <li>PHP</li>
-          <li>React</li>
-          <li>Node.JS</li>
-          <li>Angular.JS</li>
-          <li>Sass</li>
-          <li>Swift</li>
-        </ul>
-      </div>
+    </div>
+    <!-- Designer -->
+    <div class="info_block des">
+      <h3><i class="fa fa-pencil-alt"></i> Designer</h3>
+      <ul>
+        <li>UI/UX Design</li>
+        <li>Prototyping</li>
+        <li>User Stories</li>
+        <li>Flow Charts</li>
+      </ul>
+      <h4>Design Tool Kit</h4>
+      <ul>
+        <li>Sketch</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe XD</li>
+        <li>Figma</li>
+      </ul>
+    </div>
+    <!-- Developer -->
+    <div class="info_block dev">
+      <h3><i class="fa fa-code"></i> Developer</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Sass</li>
+        <li>Javascript</li>
+        <li>Drupal 7</li>
+        <li>C</li>
+        <li>PostgreSQL</li>
+      </ul>
+      <h4>Developer Tool Kit</h4>
+      <ul>
+        <li>Bootstrap</li>
+        <li>Sublime</li>
+        <li>ATOM</li>
+        <li>Brackets.io</li>
+        <li>XAMPP</li>
+        <li>Git</li>
+        <li>Github</li>
+        <li>Adobe Dream Weaver</li>
+      </ul>
     </div>
 
-    <!-- ICONS HERE -->
-    <!-- <i class="fab fa-html5"></i>
-      <i class="fab fa-css3-alt"></i>
-      <i class="fab fa-js-square"></i>
-      <i class="fab fa-java"></i>
-      <i class="fab fa-git-square"></i> -->
+    <div class="info_block pro">
+      <h3><i class="fa fa-book"></i> Professional Development</h3>
+      <p>Things that I am learning over the course of the next few months.</p>
+      <ul>
+        <li>PHP</li>
+        <li>React</li>
+        <li>Node.JS</li>
+        <li>Python</li>
+      </ul>
+    </div>
   </div>
 
   <!-- Projects -->
-  <div class="container" id="projects">
+  <div class="section projects" id="projects">
     <div class="row">
-      <!-- Header Title -->
-      <div class="col-sm-12">
+      <div class="title_head">
         <h2 class="text-center">Projects</h2>
         <hr>
       </div>
-    </div>
-    <!-- First Row -->
-    <div class="row">
-      <div class="col-sm-6">
-        <h4 class="projects">
-          UI Designer
-        </h4>
-        <p>Developed a mock up website based off the client’s needs and preferences. Assisted with implementing a
-          responsive webpage layout that is desktop, tablet, and mobile device compatible. Assisted in debugging,
-          usability testing, and incorporated client and user feedback into the final product.</p>
-        <h5><i class="fas fa-folder"></i> Technologies Used:</h5>
-        <p>Sketch, Adobe Photoshop, Sublime, HTML, CSS</p>
-        <h5>Check out the website <a href="http://www.checkit.club" target="_blank">here</a>!</h5>
+      <div class="project_all">
+        <div class="project">
+          <div class="card">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" />
+              <h1 class="name">Generic Website 1</h1>
+            </div>
+            <div class="content">
+              <div class="info">
+                <h2>Site Builder</h2>
+                <ul>
+                  <li>Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.</li>
+                  <li>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</li>
+                  <li>Sed lectus.Nullam vel sem.</li>
+                  <li>Etiam ut purus mattis mauris sodales aliquam.</li>
+                </ul>
+              </div>
+              <div class="link">
+                <a href="#">
+                  <i class="fa fa-desktop" aria-hidden="true"></i>
+                <a href="#">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="project">
+        <div class="card">
+          <div class="image">
+            <img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" />
+            <h1 class="name">Generic Website 2</h1>
+          </div>
+          <div class="content">
+            <div class="info">
+              <h2>Site Builder</h2>
+              <ul>
+                <li>Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis.</li>
+                <li>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</li>
+                <li>Sed lectus.Nullam vel sem.</li>
+                <li>Etiam ut purus mattis mauris sodales aliquam.</li>
+              </ul>
+            </div>
+            <div class="link">
+              <a href="#">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+              <a href="#">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="col-sm-6">
-        <h4 class="projects">
-          Project Leader
-        </h4>
-        <p>Created a fictional medium sized company called Thermowave Appliances and developed a product development
-          proposal and conceptually designed the product, Alphawave. Developed a proposal for supply chain strategy and
-          distribution of the product, Alphawave</p>
-        <h5><i class="fas fa-folder"></i> Technologies Used:</h5>
-        <p>Excel, R</p>
-      </div>
-    </div>
-    <!-- Seperates/Differentiates the rows -->
-    <dir class="row">
-      <div class="col-sm-12"></div>
-    </dir>
-
-    <!-- Second Row -->
-    <div class="row">
-      <div class="col-sm-6">
-        <h4 class="projects">
-          UI Designer
-        </h4>
-        <p>For HackUCSC 2018, my team decided to develop a fashion app in which I took on the role of the UX designer
-          and created a mock up of our application using Sketch.</p>
-        <h5><i class="fas fa-folder"></i> Technologies Used:</h5>
-        <p>Sketch, Java, Invision</p>
-      </div>
-      <div class="col-sm-6">
-        <h4 class="projects">
-          Junior Software Consultant
-        </h4>
-        <p>Developed a proposal centered around implementing machine learning for Instagram’s trending hash tags based
-          of users’ profiles and usage.</p>
-        <h5><i class="fas fa-folder"></i> Technologies Used:</h5>
-        <p>Excel</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact -->
-  <div class="footer-wrapper">
-    <div class="container" id="contact">
-      <h1>Let's Connect!</h1>
-      <hr>
-      <a target="_blank" href="https://linkedin.com/in/rehong" atl="Linkedin">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
-      <a target="_blank" href="#" atl="Github">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <a href="mailto:rebeccahongsf@gmail.com" atl="Email">
-        <i class="fas fa-envelope-square"></i>
-      </a>
     </div>
   </div>
+
   <!-- Footer -->
   <div class="footer-label">
     Handcrafted with
-    <i class="fas fa-coffee"></i>
+    <i class="fa fa-coffee" aria-hidden="true"></i>
     and
-    <i class="fas fa-heart"></i>
+    <i class="fa fa-heart" aria-hidden="true"></i>
     by Rebecca Hong
   </div>
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <!-- JS Script -->
-  <script src="script.js"></script>
-  <!-- Bootstrap Javascript -->
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-
-</body>
+</div>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <!-- JS Script -->
+    <script src="script.js"></script>
+    <!-- Bootstrap Javascript -->
+  </body>
 
 </html>
