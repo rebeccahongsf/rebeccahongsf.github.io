@@ -10,6 +10,11 @@ body {
 	font-size: 1.5em;
 	line-height: 1.5;
 	width 100%;
+	z-index: -100;
+}
+.notice {
+	float: left;
+	color: red;
 }
 
 /* Navigation */
