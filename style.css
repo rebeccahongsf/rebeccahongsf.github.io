@@ -1,161 +1,206 @@
+/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 15px 15px 20px 2px rgba(105,105,105, 0.9);
+}
+
 html {
-	/*Adjusts Image to window size*/
-	height: 100vh;
-	width: 100%;
+  box-sizing: border-box;
+  font-family: 'Krub', sans-serif;
+  color: var(--dark);
+  scroll-behavior: smooth;
 }
 
 body {
-	color: #595959;
-	font-family: 'Krub', sans-serif;
-	font-size: 1.5em;
-	line-height: 1.5;
-	width 100%;
-	z-index: -100;
+  background: #ccc;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
-.notice {
-	float: left;
-	color: red;
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Centers all Titles */
+.text-center {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Navigation */
-.navbar {
-	margin: auto 0;
-	padding: 0.25em 0 0.25em 0;
+/* .main-nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width:100%;
+} */
+
+.main-nav ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.navbar-default {
-	background: #dedde3;
+.main-nav a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1em;
+  box-shadow: var(--shadow);
 }
 
-/* Main */
-.container {
-	padding: 0 50px;
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--primary);
 }
 
-.section {
-	position: relative;
-}
-
-.section .row {
-	height: 100vh;
-	width: 100%;
-	position: relative;
-	margin: auto;
-}
-
-.section .bio {
-	margin-top: 10%;
-	display: inline-block;
-}
-
+/* About section */
 .about {
-	float: left;
-	justify-content: left;
-	align-items: left;
-	display: inline-block;
-	width: 75%;
-	padding: 1em;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+  'top-box top-box-a bio bio'
+  'top-box top-box-b bio bio';
 }
 
-.sidebar.right {
-	width:  25%;
-	float: right;
-	display: inline-block;
-	padding: 1em;
-}
-
-.contact {
-  margin: auto;
-	padding: 1em;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-
-.contact div:first-of-type{
-	font-size: 20px;
-}
-
-.connect_links {
-	display: inline-block;
-	align-items: center;
-	justify-content: center;
-}
-
-.connect_links .fa {
-	padding: 1em;
-	border-radius: 50%;
-	color: white;
-	font-size: 1em;
-	background-color: grey;
-}
-
-.section.skill {
-	margin: auto;
-	top: 0;
-	align-items: center;
-	justify-content: center;
-}
-
-.info_block {
-	position: relative;
-	display: inline-grid;
-	width: 30%;
-}
-
-/* Footer */
-/* Font Awesome Footer Icon Color Adjustment */
-.fa-heart {
-	color: #e78aa2;
-}
-
-.fa-coffee {
-	color: #986d4e;
+/* Bio */
+.bio {
+  grid-area: bio;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Profile Photo */
+.top-box-a {
+  grid-area: top-box-a;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 .photo {
+  height: 50%;
+  width: 50%;
 	border-radius: 50%;
-	display: block;
-  margin: 0 auto;
 }
 
-/* Center Section Title */
-.text-center {
-  text-align: center!important;
+/* Connect Links */
+.top-box-b {
+  grid-area: top-box-b;
 }
 
-hr {
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-	max-width: 90%;
-	width: 400px;
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Project Section Styling */
+.links .fa {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--dark);
+  color: var(--light);
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.links .fa:hover {
+  background: var(--light);
+  color: var(--dark);
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume .btn {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+}
+
+.resume .btn a {
+  background: var(--dark);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: var(--light);
+  text-transform: uppercase;
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+.resume .btn a:hover {
+  background: var(--light);
+  color: var(--dark);
+}
+
+/* Skill section */
+.skill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.title_head {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Project Section */
 .projects {
-	margin: 0 auto;
-	position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 30px;
+  grid-template-areas:
+  'project-1 project-2'
+  'project-3 project-4';
 }
 
-.project_all {
-	display: flex;
-	margin: auto;
-	align-items: center;
-	justify-content: center;
+.project-1 {
+  grid-area: project-1;
 }
 
-/* Project Card Styling */
+.project-2 {
+  grid-area: project-2;
+}
+
+.project-3 {
+  grid-area: project-3;
+}
+
+.project-4 {
+  grid-area: project-4;
+}
 
 .project {
+  display: inline-block;
   background-color: white;
   height: 330px;
   width: 600px;
-	margin: 10px;
   position: relative;
-	display: inline-block;
   overflow: hidden;
-  box-shadow: 15px 15px 20px 2px rgba(105,105,105, 0.9);
+  box-shadow: var(--shadow);
 	justify-content: space-evenly;
 	align-items: center;
 }
@@ -205,7 +250,7 @@ img {
 }
 
 .info {
-  width: 50%;
+  width: 70%;
   padding: 1em;
   align-items: center;
   justify-content: center;
@@ -216,10 +261,10 @@ img {
 }
 
 .link {
-  width: 50%;
+  width: 30%;
   text-align: right;
   padding: 1em;
-  display: inline-flex;
+  display: block;
   align-items: center;
   justify-content: center;
 }
@@ -250,74 +295,23 @@ a {
 
 .fa:hover {
     background-color: grey;
+		text-decoration: none;
 }
 
 .card:hover{
   transform: translateY(-50%);
 }
 
-@media screen and (max-width: 600px) {
-  .project {
-    background-color: white;
-    height: 600px;
-    width: 400px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: visible;
-    box-shadow: 0 0 30px 2px rgba(20, 21, 31, 0.9)
-  }
-
-  .card {
-    background-color: black;
-    height: 100%;
-    width 100%;
-    position: relative;
-    transition: none;
-  }
-
-  .image {
-    height: 40%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-
-  .content {
-    height: 60%;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 40%;
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .info {
-    display: inline;
-    width: 100%;
-    padding: 1em;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .info h2{
-    text-align: center;
-  }
-
-  .link {
-    width: 85%;
-    text-align: none;
-    align-items: none;
-    justify-content: center;
-  }
-
-  .card:hover{
-    transform: none;
-  }
+.totop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark);
+  color: var(--light);
+  bottom: 40px;
+  left: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
 }
