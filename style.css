@@ -173,25 +173,7 @@ body {
   align-items: center;
   justify-content: center;
   grid-gap: 30px;
-  grid-template-areas:
-  'project-1 project-2'
-  'project-3 project-4';
-}
-
-.project-1 {
-  grid-area: project-1;
-}
-
-.project-2 {
-  grid-area: project-2;
-}
-
-.project-3 {
-  grid-area: project-3;
-}
-
-.project-4 {
-  grid-area: project-4;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
 .project {
@@ -315,4 +297,116 @@ a {
   text-align: center;
   line-height: 50px;
   font-size: 22px;
+}
+
+/* Media Query */
+@media(max-width: 700px) {
+  body {
+    margin: 5% 5% 0% 5%;
+  }
+
+  .about {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    'bio bio'
+    'top-box-b top-box-b';
+  }
+
+  .bio {
+    grid-area: bio;
+  }
+
+  .top-box-b {
+    grid-area: top-box-b;
+  }
+
+
+  .photo {
+    display: none;
+  }
+
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .project {
+    background-color: white;
+    height: 600px;
+    width: 400px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: visible;
+    box-shadow: none;
+  }
+
+  .card {
+    background-color: black;
+    height: 100%;
+    width 100%;
+    position: relative;
+    transition: none;
+  }
+
+  .image {
+    height: 40%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    height: 60%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info {
+    display: inline;
+    width: 100%;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info h2{
+    text-align: center;
+  }
+
+  .link {
+    display: inline-flex;
+    width: 85%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card:hover{
+    transform: none;
+  }
+}
+
+@media(max-width: 500px) {
+  body {
+    margin: 30px;
+  }
+  .about {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    'bio'
+    'top-box-b';
+  }
 }
