@@ -254,6 +254,16 @@ a {
   transform: translateY(-50%);
 }
 
+/* Footer */
+/* Font Awesome Footer Icon Color Adjustment */
+.fa-heart {
+	color: #e78aa2;
+}
+
+.fa-coffee {
+	color: #986d4e;
+}
+
 .totop {
   position: fixed;
   width: 50px;
