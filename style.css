@@ -25,6 +25,7 @@ body {
 .wrapper {
   display: grid;
   grid-gap: 20px;
+  grid-template-columns:minmax(auto, 100%);
 }
 
 /* Centers all Titles */
@@ -32,39 +33,6 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
-}
-
-/* Navigation */
-/* .main-nav {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width:100%;
-} */
-
-.main-nav ul {
-  display: grid;
-  grid-gap: 10px;
-  padding: 0;
-  list-style: none;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.main-nav a {
-  background: var(--primary);
-  display: block;
-  text-decoration: none;
-  padding: 0.5rem;
-  text-align: center;
-  color: var(--dark);
-  text-transform: uppercase;
-  font-size: 1em;
-  box-shadow: var(--shadow);
-}
-
-.main-nav a:hover {
-  background: var(--dark);
-  color: var(--primary);
 }
 
 /* About section */
@@ -92,8 +60,9 @@ body {
 }
 
 .photo {
-  height: 50%;
-  width: 50%;
+  display: block;
+  max-width: 50%;
+  height: auto;
 	border-radius: 50%;
 }
 
@@ -327,7 +296,7 @@ a {
   }
 
   .projects {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 100%));
     align-items: center;
     justify-content: center;
     margin: auto;
