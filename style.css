@@ -195,8 +195,6 @@ img {
   position: absolute;
   top: 50%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .info {
@@ -243,7 +241,8 @@ a {
   background-color: black;
 }
 
-.fa:hover {
+.project .fa:hover,
+.project .fa:focus {
     background-color: grey;
 		text-decoration: none;
 }
@@ -279,35 +278,16 @@ a {
 /* Media Query */
 @media only screen and (max-width: 700px) {
   body {
-    margin: 5% 5% 0% 5%;
+    margin: 10px;
   }
 
   .about {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-    'bio bio'
-    'top-box-b top-box-b';
+    display: block;
+    text-align: center;
   }
-
-  .bio {
-    grid-area: bio;
-  }
-
-  .top-box-b {
-    grid-area: top-box-b;
-  }
-
 
   .photo {
     display: none;
-  }
-
-  .projects {
-    grid-template-columns: repeat(auto-fit, minmax(auto, 100%));
-    align-items: center;
-    justify-content: center;
-    margin: auto;
   }
 
   .project {
@@ -323,73 +303,62 @@ a {
     box-shadow: none;
   }
 
+  .project h1,
+  .project h2 {
+    font-size: 1em;
+  }
+
   .card {
     background-color: black;
     height: 100%;
-    width 100%;
+    width: 100%;
     position: relative;
     transition: none;
   }
 
   .image {
-    height: 40%;
+    height: 30%;
     width: 100%;
     position: relative;
-    display: flex;
-    justify-content: center;
   }
 
   .content {
-    height: 60%;
+    height: 70%;
     width: 100%;
     background-color: white;
     position: absolute;
-    top: 40%;
+    top: 30%;
     display: block;
-    align-items: center;
-    justify-content: center;
   }
 
   .info {
-    display: inline;
+    display: block;
     width: 100%;
-    padding: 1em;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    width: auto;
   }
 
   .info h2{
     text-align: center;
   }
 
+  .info ul {
+    font-size: 16px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
   .link {
-    display: inline-flex;
-    width: 85%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    width: auto;
   }
 
   .card:hover{
     transform: none;
   }
-}
 
-@media only screen and (max-width: 500px) {
-  body {
-    margin: 30px;
-  }
-  .about {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-    'bio'
-    'top-box-b';
-  }
   .footer {
-    grid-template-columns: minmax(auto, 100%);
-  }
-  .footer p {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
