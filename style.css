@@ -8,25 +8,30 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Krub', sans-serif;
   color: var(--dark);
   scroll-behavior: smooth;
 }
 
+body,
+.flex-container,
+.gallery-flex {
+  display: flex;
+}
+
 body {
+  justify-content: center;
+  position: relative;
   background: #ccc;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
   margin-bottom: 0;
   line-height: 1.4;
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns:minmax(auto, 100%);
+.flex-container {
+  flex-direction: column;
+  width: 90%;
+  font-family: 'Krub', sans-serif;
 }
+
 
 /* Centers all Titles */
 .text-center {
@@ -124,43 +129,41 @@ body {
   color: var(--dark);
 }
 
-/* Skill section */
-.skill {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+/* Flex section */
+.gallery-flex {
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
 }
 
-.title_head {
-  display: grid;
-  align-items: center;
-  justify-content: center;
+.gallery-flex > * {
+  margin: 10px;
+}
+
+.gallery-flex img {
+  max-width: 100%;
+  width: 600px;
 }
 
 /* Project Section */
-.projects {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-}
-
-.project {
-  display: inline-block;
+.gallery-wrap {
   background-color: white;
   height: 330px;
   width: 600px;
-  position: relative;
+  /* position: absolute; */
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   overflow: hidden;
-  box-shadow: var(--shadow);
-	justify-content: space-evenly;
-	align-items: center;
+  box-shadow: 0 0 30px 2px rgba(20, 21, 31, 0.9)
 }
 
 .card {
   background-color: black;
   height: 200%;
-  width 100%;
+  width: 100%;
   position: relative;
   transition: 1.5s;
 }
@@ -279,7 +282,7 @@ a {
 }
 
 /* Media Query */
-@media(max-width: 700px) {
+@media only screen and (max-width: 700px) {
   body {
     margin: 5% 5% 0% 5%;
   }
@@ -377,7 +380,7 @@ a {
   }
 }
 
-@media(max-width: 500px) {
+@media only screen and (max-width: 500px) {
   body {
     margin: 30px;
   }
@@ -387,5 +390,11 @@ a {
     grid-template-areas:
     'bio'
     'top-box-b';
+  }
+  .footer {
+    grid-template-columns: minmax(auto, 100%);
+  }
+  .footer p {
+    font-size: 10px;
   }
 }
