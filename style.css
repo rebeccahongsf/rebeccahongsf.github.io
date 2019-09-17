@@ -136,10 +136,6 @@ body {
   height: auto;
 }
 
-.gallery-flex > * {
-  margin: 10px;
-}
-
 .gallery-flex img {
   max-width: 100%;
   width: 600px;
@@ -150,8 +146,7 @@ body {
   background-color: white;
   height: 330px;
   width: 600px;
-  /* position: absolute; */
-  margin: auto;
+  margin: 20px auto;
   top: 0;
   bottom: 0;
   left: 0;
