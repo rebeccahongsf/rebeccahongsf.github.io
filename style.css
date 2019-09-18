@@ -247,7 +247,8 @@ a {
 		text-decoration: none;
 }
 
-.card:hover{
+.card:hover,
+.card:focus {
   transform: translateY(-50%);
 }
 
