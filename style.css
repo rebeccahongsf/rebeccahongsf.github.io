@@ -133,6 +133,7 @@ body {
 /* Flex section */
 .gallery-flex {
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   height: auto;
 }
@@ -145,9 +146,9 @@ body {
 /* Project Section */
 .gallery-wrap {
   background-color: white;
-  height: 330px;
-  width: 600px;
-  margin: 20px auto;
+  height: 275px;
+  width: 500px;
+  margin: 20px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -199,8 +200,8 @@ img {
 }
 
 .info {
-  width: 70%;
-  padding: 1em;
+  width: 80%;
+  padding-left: 1em;
   align-items: center;
   justify-content: center;
 }
@@ -210,7 +211,7 @@ img {
 }
 
 .link {
-  width: 30%;
+  width: 20%;
   text-align: right;
   padding: 1em;
   display: block;
@@ -223,12 +224,12 @@ a {
 }
 
 .project .fa {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   color: white;
   display: flex !important;
-  font-size: 40px !important;
+  font-size: 20px !important;
   align-items: center;
   justify-content: center;
   margin: 10px;
@@ -278,9 +279,19 @@ a {
 }
 
 /* Media Query */
+@media only screen and (max-width: 1315px) {
+  .gallery-wrap{
+    margin: 10px 0px;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   body {
     margin: 10px;
+  }
+
+  .gallery-wrap {
+    margin: 20px auto;
   }
 
   .about {
@@ -354,6 +365,12 @@ a {
   .link {
     display: flex;
     width: auto;
+  }
+
+  .project .fa {
+    width: 80px;
+    height: 80px;
+    font-size: 40px !important;
   }
 
   .card:hover{
