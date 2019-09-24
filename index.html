@@ -33,7 +33,7 @@
 
     <!-- CSS Styling -->
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -77,7 +77,7 @@
 
   <!-- Projects -->
   <h2 class="text-center">Projects</h2>
-  <section class="projects gallery-flex" id="projects">
+  <section class="projects gallery-flex" data-aos="fade-up" id="projects">
     <div class="gallery-wrap project project-1">
       <div class="card">
         <div class="image">
@@ -184,11 +184,16 @@
   <a class="totop" href="#" aria-label="To the Top"><i class="fa fa-angle-up"></i></a>
 </div>
 <!-- End of Wrapper -->
-
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <!-- JS Script -->
     <script src="script.js"></script>
+    <!-- Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Init AOS -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
