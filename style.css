@@ -282,7 +282,7 @@ a {
 /* Media Query */
 @media only screen and (max-width: 1315px) {
   .gallery-wrap{
-    margin: 10px 0px;
+    margin: 10px;
   }
 }
 
