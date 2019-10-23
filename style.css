@@ -257,6 +257,11 @@ a {
 
 /* Footer */
 /* Font Awesome Footer Icon Color Adjustment */
+
+.footer {
+  bottom: 0;
+}
+
 .fa-heart {
 	color: #e78aa2;
 }
