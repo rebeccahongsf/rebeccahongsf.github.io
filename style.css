@@ -1,0 +1,394 @@
+/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 15px 15px 20px 2px rgba(105,105,105, 0.9);
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--dark);
+  scroll-behavior: smooth;
+}
+
+body,
+.flex-container,
+.gallery-flex {
+  display: flex;
+}
+
+body {
+  justify-content: center;
+  position: relative;
+  background: #ccc;
+  margin: 50px;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.flex-container {
+  flex-direction: column;
+  width: 90%;
+  font-family: 'Krub', sans-serif;
+}
+
+
+/* Centers all Titles */
+.text-center {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About section */
+.about {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+  'top-box top-box-a bio bio'
+  'top-box top-box-b bio bio';
+}
+
+/* Bio */
+.bio {
+  grid-area: bio;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile Photo */
+.top-box-a {
+  grid-area: top-box-a;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.photo {
+  display: block;
+  max-width: 50%;
+  height: auto;
+	border-radius: 50%;
+}
+
+/* Connect Links */
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links .fa {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--dark);
+  color: var(--light);
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.links .fa:hover {
+  background: var(--light);
+  color: var(--dark);
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  border-color: none;
+}
+
+.resume a {
+  background: var(--dark);
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  color: var(--light);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+.resume a:hover {
+  background: var(--light);
+  color: var(--dark);
+}
+
+/* Flex section */
+.gallery-flex {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.gallery-flex img {
+  max-width: 100%;
+  width: 600px;
+}
+
+/* Project Section */
+.gallery-wrap {
+  background-color: white;
+  height: 275px;
+  width: 500px;
+  margin: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  box-shadow: 0 0 30px 2px rgba(20, 21, 31, 0.9)
+}
+
+.card {
+  background-color: black;
+  height: 200%;
+  width: 100%;
+  position: relative;
+  transition: 1.5s;
+}
+
+.image {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  background-color: rgba(250,250,250,0.7);
+  height: 15%;
+  width: 90%;
+  position: absolute;
+  bottom: 20px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  height: 50%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  display: flex;
+}
+
+.info {
+  width: 80%;
+  padding-left: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.info h2{
+  text-align: center;
+}
+
+.link {
+  width: 20%;
+  text-align: right;
+  padding: 1em;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project .fa {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  display: flex !important;
+  font-size: 20px !important;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.project .fa-desktop {
+  background-color: black;
+}
+
+.project .fa-github {
+  background-color: black;
+}
+
+.project .fa:hover,
+.project .fa:focus {
+    background-color: grey;
+		text-decoration: none;
+}
+
+.card:hover,
+.card:focus {
+  transform: translateY(-50%);
+}
+
+/* Footer */
+/* Font Awesome Footer Icon Color Adjustment */
+
+.footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.fa-heart {
+	color: #e78aa2;
+}
+
+.fa-coffee {
+	color: #986d4e;
+}
+
+.totop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark);
+  color: var(--light);
+  bottom: 40px;
+  left: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1360px) {
+  .gallery-wrap{
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+
+  .gallery-wrap {
+    margin: 20px auto;
+    flex-basis: unset;
+  }
+
+  .about {
+    display: block;
+    text-align: center;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .project {
+    background-color: white;
+    height: 600px;
+    width: 400px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: visible;
+    box-shadow: none;
+  }
+
+  .project h1,
+  .project h2 {
+    font-size: 1em;
+  }
+
+  .card {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: none;
+  }
+
+  .image {
+    height: 30%;
+    width: 100%;
+    position: relative;
+  }
+
+  .content {
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    display: block;
+  }
+
+  .info {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    width: auto;
+  }
+
+  .info h2{
+    text-align: center;
+  }
+
+  .info ul {
+    font-size: 16px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .link {
+    display: flex;
+    width: auto;
+  }
+
+  .project .fa {
+    width: 80px;
+    height: 80px;
+    font-size: 40px !important;
+  }
+
+  .card:hover{
+    transform: none;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
