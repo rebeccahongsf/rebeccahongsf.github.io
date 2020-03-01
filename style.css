@@ -1,80 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 /* CSS Variables */
 :root {
   --primary: #ddd;
   --dark: #333;
   --light: #fff;
   --shadow: 15px 15px 20px 2px rgba(105,105,105, 0.9);
+  --gradient: linear-gradient(180deg, rgba(128,156,142,1) 0%, rgba(186,202,194,1) 70%, rgba(255,255,255,1) 100%);
 }
 
 html {
+  font-size: 62.5%;
   box-sizing: border-box;
   color: var(--dark);
   scroll-behavior: smooth;
 }
 
-body,
-.flex-container,
-.gallery-flex {
-  display: flex;
-}
-
 body {
-  justify-content: center;
-  position: relative;
-  background: #ccc;
-  margin: 50px;
-  margin-bottom: 0;
-  line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
 }
 
-.flex-container {
-  flex-direction: column;
-  width: 90%;
-  font-family: 'Krub', sans-serif;
+h1 {
+  font-size: 4.8rem;
 }
 
+h2 {
+  font-size: 3.6rem;
+}
 
-/* Centers all Titles */
-.text-center {
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.container {
+  background-color:  rgba(208, 219, 213, 0.8);
+  border-radius: 10px;
+  padding: 7em 5em;
+  margin: 5em;
   display: grid;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
 }
 
-/* About section */
-.about {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-  'top-box top-box-a bio bio'
-  'top-box top-box-b bio bio';
-}
-
-/* Bio */
-.bio {
-  grid-area: bio;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Profile Photo */
-.top-box-a {
-  grid-area: top-box-a;
-  align-items: center;
-  justify-content: center;
+.group-left {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-left div {
+  text-align: center;
 }
 
 .photo {
-  display: block;
-  max-width: 50%;
+  width: 100%;
   height: auto;
 	border-radius: 50%;
-}
-
-/* Connect Links */
-.top-box-b {
-  grid-area: top-box-b;
 }
 
 .links {
@@ -101,113 +86,9 @@ body {
   color: var(--dark);
 }
 
-.resume {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.resume {
-  display: grid;
-  grid-gap: 10px;
-  padding: 0;
-  border-color: none;
-}
-
-.resume a {
-  background: var(--dark);
-  text-decoration: none;
-  padding: 0.8rem 1rem;
-  text-align: center;
-  color: var(--light);
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  border-radius: 20px;
-}
-
-.resume a:hover {
-  background: var(--light);
-  color: var(--dark);
-}
-
-/* Flex section */
-.gallery-flex {
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: auto;
-}
-
-.gallery-flex img {
-  max-width: 100%;
-  width: 600px;
-}
-
-/* Project Section */
-.gallery-wrap {
-  background-color: white;
-  height: 275px;
-  width: 500px;
-  margin: 20px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  box-shadow: 0 0 30px 2px rgba(20, 21, 31, 0.9)
-}
-
-.card {
-  background-color: black;
-  height: 200%;
-  width: 100%;
-  position: relative;
-  transition: 1.5s;
-}
-
-.image {
-  height: 50%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
 img {
   height: 100%;
   width: 100%;
-}
-
-.name {
-  background-color: rgba(250,250,250,0.7);
-  height: 15%;
-  width: 90%;
-  position: absolute;
-  bottom: 20px;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.content {
-  height: 50%;
-  width: 100%;
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  display: flex;
-}
-
-.info {
-  width: 80%;
-  padding-left: 1em;
-  align-items: center;
-  justify-content: center;
-}
-
-.info h2{
-  text-align: center;
 }
 
 .link {
@@ -250,11 +131,6 @@ a {
 		text-decoration: none;
 }
 
-.card:hover,
-.card:focus {
-  transform: translateY(-50%);
-}
-
 /* Footer */
 /* Font Awesome Footer Icon Color Adjustment */
 
@@ -273,104 +149,21 @@ a {
 	color: #986d4e;
 }
 
-.totop {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  background-color: var(--dark);
-  color: var(--light);
-  bottom: 40px;
-  left: 20px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  font-size: 22px;
-}
-
-/* Media Query */
-@media only screen and (max-width: 1360px) {
-  .gallery-wrap{
-    margin: 10px;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   body {
     margin: 10px;
   }
 
-  .gallery-wrap {
-    margin: 20px auto;
-    flex-basis: unset;
-  }
-
-  .about {
+  .container {
     display: block;
-    text-align: center;
   }
 
   .photo {
-    display: none;
-  }
-
-  .project {
-    background-color: white;
-    height: 600px;
-    width: 400px;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: visible;
-    box-shadow: none;
-  }
-
-  .project h1,
-  .project h2 {
-    font-size: 1em;
-  }
-
-  .card {
-    background-color: black;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    transition: none;
-  }
-
-  .image {
-    height: 30%;
-    width: 100%;
-    position: relative;
-  }
-
-  .content {
-    height: 70%;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 30%;
-    display: block;
-  }
-
-  .info {
-    display: block;
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
-    padding: 1em;
-    width: auto;
-  }
-
-  .info h2{
-    text-align: center;
-  }
-
-  .info ul {
-    font-size: 16px;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+    display: flex;
+    padding: 2rem;
   }
 
   .link {
