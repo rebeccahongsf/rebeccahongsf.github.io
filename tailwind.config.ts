@@ -1,12 +1,20 @@
-module.exports = {
+/* eslint-disable @typescript-eslint/no-require-imports */
+
+/**
+ * Tailwind Configuration.
+ */
+import type { Config } from 'tailwindcss';
+import typography from '@tailwindcss/typography';
+
+const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
+    './utilities/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        // Sage green color variations
         sage: {
           50: '#f4f7f1',
           100: '#e6ede0',
@@ -19,7 +27,6 @@ module.exports = {
           800: '#3d4f2d',
           900: '#2b3820',
         },
-        // Lilac color variations
         lilac: {
           50: '#f7f4fa',
           100: '#efe8f4',
@@ -49,5 +56,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [typography],
 };
+
+export default config;

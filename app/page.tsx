@@ -1,6 +1,7 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'motion/react';
 
@@ -101,8 +102,8 @@ export default function Home() {
                   Hi, I&apos;m Rebecca
                 </h1>
                 <p className="mt-8 text-xl text-gray-500">
-                  I&apos;m always looking for new ways to create &apos;site&apos;-seeing
-                  experiences!
+                  I&apos;m always looking for new ways to create
+                  &apos;site&apos;-seeing experiences!
                 </p>
                 <div className="mt-5 flex gap-4">
                   <Link
